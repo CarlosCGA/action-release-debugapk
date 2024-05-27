@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sh -c "git config --global --add safe.directory *"
+#sh -c "git config --global --add safe.directory *"
 #hub checkout ${${REPO_BRANCH}:-master}
 hub checkout master
 VERSION_NAME=`grep -oP 'versionName "\K(.*?)(?=")' ./${APP_FOLDER}/build.gradle`
